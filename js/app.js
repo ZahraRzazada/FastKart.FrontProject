@@ -1,0 +1,29 @@
+document.querySelector("#hover-product").onmouseover=function(){
+    document.querySelector(".product-drop2").style.display="block"
+}
+document.querySelector("#hover-product").onmouseleave=function(){
+    document.querySelector(".product-drop2").style.display="none"
+}
+document.querySelector(".product-drop2").onmouseleave=function(){
+    document.querySelector(".product-drop2").style.display="none"
+}
+//----------------------------
+document.querySelector("#hover-page1").onmouseover=function(){
+    document.querySelector(".pages-drop2").style.display="block"
+}
+document.querySelector(".pages-drop2").onmouseleave=function(){
+    document.querySelector(".pages-drop2").style.display="none"
+}
+document.querySelector("#hover-page1").onmouseleave=function(){
+    document.querySelector(".pages-drop2").style.display="none"
+}
+//-----------------------------
+document.querySelector("#hover-page2").onmouseover=function(){
+    document.querySelector(".pages-drop3").style.display="block"
+}
+document.querySelector(".pages-drop3").onmouseleave=function(){
+    document.querySelector(".pages-drop3").style.display="none"
+}
+document.querySelector("#hover-page2").onmouseleave=function(){
+    document.querySelector(".pages-drop3").style.display="none"
+}
