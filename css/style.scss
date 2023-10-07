@@ -703,3 +703,964 @@ header{
     }
 }
 //-------------------end--------------------------------
+//------------------Bank--------------------------------
+#Bank{
+    .bank-title{
+        display: flex;
+        align-items: center;
+        .bank-left{
+            h2{
+                margin: 30px 0px;
+                font-size: 27px;
+                font-weight: 700;
+            }
+        }
+        .bank-right{
+            display: flex;
+            justify-content:flex-end;
+            
+            i{
+                box-shadow: 0px 0px 3px rgb(97, 94, 94);;
+                border: none;
+                font-size: 25px;
+                padding: 7px;
+                margin-right: 20px;
+                border-radius: 10px;
+                color: #239698;
+            }
+        }
+    }
+    .bank-cards{
+        margin-right: 20px;
+        .bank-top{
+            display: flex;
+            background: linear-gradient(76.68deg, #e6e6e6 -9.39%, #fafafa 78.76%, #f0f0f0 101.45%, #fff 112.78%);;
+            padding: 25px 25px 5px 25px;
+            border-top-left-radius:10px;
+            border-top-right-radius:10px;
+            .btop-left{
+                img{
+                    width: 40%;
+                }
+                .btop-content{
+                    margin-top: 10px;
+                    h2{
+                        color: #239bf0;
+                        font-size: 30px;
+                        font-weight: 700;
+                    }
+                    h5{
+                        color: #4a5568;
+                        font-size: 15px;
+                        margin-bottom: 40px;
+                    }
+                    p{
+                        color: #4a5568;
+                    }
+                }
+            }
+
+        }
+        .bank-bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 7px 20px;
+            background:linear-gradient(90deg, #2395e8 15.92%, #4eb5ff 49.57%);
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+            .bbottom-left{
+                color: white;
+                p{
+                    padding-top: 13px;
+                    font-size: 17px;
+                    span{
+                        font-size: 17px;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .bbottom-right{
+                button{
+                    margin-left: auto;
+                    color: #fff;
+                    font-weight: 600;
+                    padding: 6px 21px;
+                    background:linear-gradient(90deg, #2395e8 15.92%, #4eb5ff 49.57%);
+                    border: none;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    &::after{
+                        content: " ";
+                        // background-color: linear-gradient(90deg, #4eb5ff 15.92%, #2395e8 49.57%);
+                        top: 0;
+                        background-color: red;
+                        left: 0;
+                        width: 100%;
+                        height: 0;
+                        opacity: 1;
+                        position: absolute;
+                        transition: 0.2s;  
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+    &:hover{
+        &::after{
+            opacity: 1;
+        }
+    }
+}
+//------------------end---------------------------------
+//------------------selling-----------------------------
+#Selling{
+    .selling-title{
+        display: flex;
+        align-items: center;
+        .selling-left{
+            h2{
+                margin: 30px 0px;
+                font-size: 27px;
+                font-weight: 700;
+            }
+        }
+    }
+    .selling-bottom{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .selling-cards{
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border: 1px solid rgb(236, 233, 233);
+        border-radius: 10px;
+        padding: 0px 10px 10px 10px;
+        position: relative;
+    img{
+        width: 100%;
+        height: 175px;
+        padding: 40px 30px 20px 30px;
+    }
+    .selling-icons{
+        left: 20%;
+        display: none !important;
+        position: absolute;
+        animation: moveUp 0.4s ease-in-out;
+        i{
+           margin-right: 5px;
+           background-color: #d6e3e3;
+           font-size: 16px;
+           color: black;
+           border: 1px solid #239698;
+           padding: 10px;
+           border-radius: 50%;
+        }
+    }
+  .selling-content{
+            display: flex;
+            justify-content: space-around;
+    .scontent-left{
+        
+        i{
+            font-size: 12px;
+            color: #ffb803;
+        }
+        h3{
+            font-size: 16px;
+        
+        }
+        span{
+            color: #239698;
+            font-weight: 700;
+            font-size: 15px;
+        }
+        #deleted{
+           color: black;
+           text-decoration: line-through;
+           font-weight: 400;
+        }
+    }
+    .scontent-right{
+        
+        display: flex;
+        align-items: flex-end;
+        padding-left: 3px;
+        button{
+            padding: 5px 10px;
+            color: white;
+            background-color: #239698;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+    }
+  }
+  &:hover{
+    .selling-content h3{
+        color: #239698;
+    }
+    img{
+        transform: scale(1.1);
+        transition: 0.6s;
+    }
+    .selling-icons{
+        display: block !important;
+        top: 35%;
+        left: 1%;
+        z-index: 100;
+        }
+        @keyframes moveUp {
+            0% {
+              transform: translateY(20px);
+             
+            }
+            100% {
+              transform: translateY(0);
+            }
+          }
+}
+}
+}
+//------------------end---------------------------------
+//------------------freegift----------------------------
+#Freegift{
+    .freegift{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(/photos/image21.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 6px;
+        margin-top: 20px;
+        color: white;
+        padding: 5px;
+       p{
+       font-size: 23px;
+       font-weight: 400;
+       margin-top: 10px;
+       }
+       span{
+        font-size: 30px;
+        font-weight: 700;
+        margin-left: 5px;
+       }
+    }
+}
+//------------------end----------------------------------
+//------------------freegift----------------------------
+#Breakfast{
+    .breakfast-title{
+        display: flex;
+        align-items: center;
+        .breakfast-left{
+            h2{
+                margin: 30px 0px;
+                font-size: 27px;
+                font-weight: 700;
+            }
+        }
+        .breakfast-right{
+            display: flex;
+            justify-content:flex-end;
+            
+            i{
+                box-shadow: 0px 0px 3px rgb(97, 94, 94);;
+                border: none;
+                font-size: 25px;
+                padding: 7px;
+                margin-right: 20px;
+                border-radius: 10px;
+                color: #239698;
+            }
+        }
+    }
+    .breakfast-cards{
+            margin-right: 15px;
+            border: 1px solid rgb(236, 233, 233);
+            border-radius: 10px;
+            padding: 0px 10px 10px 10px;
+            position: relative;
+        img{
+            width: 85%;
+            height: 175px;
+            padding: 40px 30px 20px 40px;
+        }
+        .breakfast-icons{
+            left: 20%;
+            display: none !important;
+            position: absolute;
+            animation: moveUp 0.4s ease-in-out;
+            i{
+               margin-right: 5px;
+               background-color: #d6e3e3;
+               font-size: 16px;
+               color: black;
+               border: 1px solid #239698;
+               padding: 10px;
+               border-radius: 50%;
+            }
+        }
+      .breakfast-content{
+                display: flex;
+                justify-content: space-around;
+        .bcontent-left{
+            
+            i{
+                font-size: 12px;
+                color: #ffb803;
+            }
+            h3{
+                font-size: 16px;
+            
+            }
+            span{
+                color: #239698;
+                font-weight: 700;
+                font-size: 15px;
+            }
+            #deleted{
+               color: black;
+               text-decoration: line-through;
+               font-weight: 400;
+            }
+        }
+        .bcontent-right{
+            
+            display: flex;
+            align-items: flex-end;
+            padding-left: 3px;
+            button{
+                padding: 5px 10px;
+                color: white;
+                background-color: #239698;
+                border: none;
+                border-radius: 5px;
+                font-size: 20px;
+            }
+        }
+      }
+      &:hover{
+        .breakfast-content h3{
+            color: #239698;
+        }
+        img{
+            transform: scale(1.1);
+            transition: 0.6s;
+        }
+        .breakfast-icons{
+            display: block !important;
+            top: 35%;
+            left: 17%;
+            z-index: 100;
+            }
+            @keyframes moveUp {
+                0% {
+                  transform: translateY(20px);
+                 
+                }
+                100% {
+                  transform: translateY(0);
+                }
+              }
+    }
+    }
+}
+//------------------end---------------------------------
+//-------------------Chemist----------------------------
+#Chemist{
+        .chemist-title{
+            display: flex;
+            align-items: center;
+            .chemist-left{
+                h2{
+                    margin: 30px 0px;
+                    font-size: 27px;
+                    font-weight: 700;
+                }
+            }
+            .chemist-right{
+                display: flex;
+                justify-content:flex-end;
+                
+                i{
+                    box-shadow: 0px 0px 3px rgb(97, 94, 94);;
+                    border: none;
+                    font-size: 25px;
+                    padding: 7px;
+                    margin-right: 20px;
+                    border-radius: 10px;
+                    color: #239698;
+                }
+            }
+        }
+        .chemist-cards{
+                margin-right: 15px;
+                border: 1px solid rgb(236, 233, 233);
+                border-radius: 10px;
+                padding: 0px 10px 10px 10px;
+                position: relative;
+            img{
+                width: 75%;
+                height: 175px;
+                padding: 40px 30px 20px 60px;
+            }
+            .chemist-icons{
+                left: 20%;
+                display: none !important;
+                position: absolute;
+                animation: moveUp 0.4s ease-in-out;
+                i{
+                   margin-right: 5px;
+                   background-color: #d6e3e3;
+                   font-size: 16px;
+                   color: black;
+                   border: 1px solid #239698;
+                   padding: 10px;
+                   border-radius: 50%;
+                }
+            }
+          .chemist-content{
+                    display: flex;
+                    justify-content: space-around;
+            .ccontent-left{
+                
+                i{
+                    font-size: 12px;
+                    color: #ffb803;
+                }
+                h3{
+                    font-size: 16px;
+                
+                }
+                span{
+                    color: #239698;
+                    font-weight: 700;
+                    font-size: 15px;
+                }
+                #deleted{
+                   color: black;
+                   text-decoration: line-through;
+                   font-weight: 400;
+                }
+            }
+            .ccontent-right{
+                
+                display: flex;
+                align-items: flex-end;
+                padding-left: 3px;
+                button{
+                    padding: 5px 10px;
+                    color: white;
+                    background-color: #239698;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 20px;
+                }
+            }
+          }
+          &:hover{
+            .chemist-content h3{
+                color: #239698;
+            }
+            img{
+                transform: scale(1.1);
+                transition: 0.6s;
+            }
+            .chemist-icons{
+                display: block !important;
+                top: 35%;
+                left: 17%;
+                z-index: 100;
+                }
+                @keyframes moveUp {
+                    0% {
+                      transform: translateY(20px);
+                     
+                    }
+                    100% {
+                      transform: translateY(0);
+                    }
+                  }
+        }
+        }
+    }
+//-------------------end--------------------------------
+//-------------------Drinks-----------------------------
+#Drinks{
+    .drinks-title{
+        display: flex;
+        align-items: center;
+        .drinks-left{
+            h2{
+                margin: 30px 0px;
+                font-size: 27px;
+                font-weight: 700;
+            }
+        }
+        .drinks-right{
+            display: flex;
+            justify-content:flex-end;
+            
+            i{
+                box-shadow: 0px 0px 3px rgb(97, 94, 94);;
+                border: none;
+                font-size: 25px;
+                padding: 7px;
+                margin-right: 20px;
+                border-radius: 10px;
+                color: #239698;
+            }
+        }
+    }
+    .drinks-cards{
+            margin-right: 15px;
+            border: 1px solid rgb(236, 233, 233);
+            border-radius: 10px;
+            padding: 0px 10px 10px 10px;
+            position: relative;
+        img{
+            width: 75%;
+            height: 175px;
+            padding: 40px 30px 20px 60px;
+        }
+        .drinks-icons{
+            left: 20%;
+            display: none !important;
+            position: absolute;
+            animation: moveUp 0.4s ease-in-out;
+            i{
+               margin-right: 5px;
+               background-color: #d6e3e3;
+               font-size: 16px;
+               color: black;
+               border: 1px solid #239698;
+               padding: 10px;
+               border-radius: 50%;
+            }
+        }
+      .drinks-content{
+                display: flex;
+                justify-content: space-around;
+        .dcontent-left{
+            
+            i{
+                font-size: 12px;
+                color: #ffb803;
+            }
+            h3{
+                font-size: 16px;
+            
+            }
+            span{
+                color: #239698;
+                font-weight: 700;
+                font-size: 15px;
+            }
+            #deleted{
+               color: black;
+               text-decoration: line-through;
+               font-weight: 400;
+            }
+        }
+        .dcontent-right{
+            
+            display: flex;
+            align-items: flex-end;
+            padding-left: 3px;
+            button{
+                padding: 5px 10px;
+                color: white;
+                background-color: #239698;
+                border: none;
+                border-radius: 5px;
+                font-size: 20px;
+            }
+        }
+      }
+      &:hover{
+        .drinks-content h3{
+            color: #239698;
+        }
+        img{
+            transform: scale(1.1);
+            transition: 0.6s;
+        }
+        .drinks-icons{
+            display: block !important;
+            top: 35%;
+            left: 17%;
+            z-index: 100;
+            }
+            @keyframes moveUp {
+                0% {
+                  transform: translateY(20px);
+                 
+                }
+                100% {
+                  transform: translateY(0);
+                }
+              }
+    }
+    }
+}
+//---------------------end------------------------------
+//-------------------Grocery-----------------------------
+#Grocery{
+    .grocery-title{
+        display: flex;
+        align-items: center;
+        .grocery-left{
+            h2{
+                margin: 30px 0px;
+                font-size: 27px;
+                font-weight: 700;
+            }
+        }
+        .grocery-right{
+            display: flex;
+            justify-content:flex-end;
+            
+            i{
+                box-shadow: 0px 0px 3px rgb(97, 94, 94);;
+                border: none;
+                font-size: 25px;
+                padding: 7px;
+                margin-right: 20px;
+                border-radius: 10px;
+                color: #239698;
+            }
+        }
+    }
+    .grocery-cards{
+            margin-right: 15px;
+            border: 1px solid rgb(236, 233, 233);
+            border-radius: 10px;
+            padding: 0px 10px 10px 10px;
+            position: relative;
+        img{
+            width: 85%;
+            height: 175px;
+            padding: 40px 30px 20px 40px;
+        }
+        .grocery-icons{
+            left: 20%;
+            display: none !important;
+            position: absolute;
+            animation: moveUp 0.4s ease-in-out;
+            i{
+               margin-right: 5px;
+               background-color: #d6e3e3;
+               font-size: 16px;
+               color: black;
+               border: 1px solid #239698;
+               padding: 10px;
+               border-radius: 50%;
+            }
+        }
+      .grocery-content{
+                display: flex;
+                justify-content: space-around;
+        .gcontent-left{
+            
+            i{
+                font-size: 12px;
+                color: #ffb803;
+            }
+            h3{
+                font-size: 16px;
+            
+            }
+            span{
+                color: #239698;
+                font-weight: 700;
+                font-size: 15px;
+            }
+            #deleted{
+               color: black;
+               text-decoration: line-through;
+               font-weight: 400;
+            }
+        }
+        .gcontent-right{
+            
+            display: flex;
+            align-items: flex-end;
+            padding-left: 3px;
+            button{
+                padding: 5px 10px;
+                color: white;
+                background-color: #239698;
+                border: none;
+                border-radius: 5px;
+                font-size: 20px;
+            }
+        }
+      }
+      &:hover{
+        .grocery-content h3{
+            color: #239698;
+        }
+        img{
+            transform: scale(1.1);
+            transition: 0.6s;
+        }
+        .grocery-icons{
+            display: block !important;
+            top: 35%;
+            left: 17%;
+            z-index: 100;
+            }
+            @keyframes moveUp {
+                0% {
+                  transform: translateY(20px);
+                 
+                }
+                100% {
+                  transform: translateY(0);
+                }
+              }
+    }
+    }
+}
+//---------------------end------------------------------
+//-------------------Personal-----------------------------
+#Personal{
+    .personal-title{
+        display: flex;
+        align-items: center;
+        .personal-left{
+            h2{
+                margin: 30px 0px;
+                font-size: 27px;
+                font-weight: 700;
+            }
+        }
+        .personal-right{
+            display: flex;
+            justify-content:flex-end;
+            
+            i{
+                box-shadow: 0px 0px 3px rgb(97, 94, 94);;
+                border: none;
+                font-size: 25px;
+                padding: 7px;
+                margin-right: 20px;
+                border-radius: 10px;
+                color: #239698;
+            }
+        }
+    }
+    .personal-cards{
+            margin-right: 15px;
+            border: 1px solid rgb(236, 233, 233);
+            border-radius: 10px;
+            padding: 0px 10px 10px 10px;
+            position: relative;
+        img{
+            width: 75%;
+            height: 175px;
+            padding: 40px 30px 20px 50px;
+        }
+        .personal-icons{
+            left: 20%;
+            display: none !important;
+            position: absolute;
+            animation: moveUp 0.4s ease-in-out;
+            i{
+               margin-right: 5px;
+               background-color: #d6e3e3;
+               font-size: 16px;
+               color: black;
+               border: 1px solid #239698;
+               padding: 10px;
+               border-radius: 50%;
+            }
+        }
+      .personal-content{
+                display: flex;
+                justify-content: space-around;
+        .pcontent-left{
+            
+            i{
+                font-size: 12px;
+                color: #ffb803;
+            }
+            h3{
+                font-size: 16px;
+            
+            }
+            span{
+                color: #239698;
+                font-weight: 700;
+                font-size: 15px;
+            }
+            #deleted{
+               color: black;
+               text-decoration: line-through;
+               font-weight: 400;
+            }
+        }
+        .pcontent-right{
+            
+            display: flex;
+            align-items: flex-end;
+            padding-left: 3px;
+            button{
+                padding: 5px 10px;
+                color: white;
+                background-color: #239698;
+                border: none;
+                border-radius: 5px;
+                font-size: 20px;
+            }
+        }
+      }
+      &:hover{
+        .personal-content h3{
+            color: #239698;
+        }
+        img{
+            transform: scale(1.1);
+            transition: 0.6s;
+        }
+        .personal-icons{
+            display: block !important;
+            top: 35%;
+            left: 17%;
+            z-index: 100;
+            }
+            @keyframes moveUp {
+                0% {
+                  transform: translateY(20px);
+                 
+                }
+                100% {
+                  transform: translateY(0);
+                }
+              }
+    }
+    }
+}
+//---------------------end------------------------------
+//-------------------Kitchen-----------------------------
+#Kitchen{
+    .kitchen-title{
+        display: flex;
+        align-items: center;
+        .kitchen-left{
+            h2{
+                margin: 30px 0px;
+                font-size: 27px;
+                font-weight: 700;
+            }
+        }
+        .kitchen-right{
+            display: flex;
+            justify-content:flex-end;
+            
+            i{
+                box-shadow: 0px 0px 3px rgb(97, 94, 94);;
+                border: none;
+                font-size: 25px;
+                padding: 7px;
+                margin-right: 20px;
+                border-radius: 10px;
+                color: #239698;
+            }
+        }
+    }
+    .kitchen-cards{
+            margin-right: 15px;
+            border: 1px solid rgb(236, 233, 233);
+            border-radius: 10px;
+            padding: 0px 10px 10px 10px;
+            position: relative;
+        img{
+            width: 95 %;
+            height: 175px;
+            padding: 40px 30px 20px 50px;
+        }
+        .kitchen-icons{
+            left: 20%;
+            display: none !important;
+            position: absolute;
+            animation: moveUp 0.4s ease-in-out;
+            i{
+               margin-right: 5px;
+               background-color: #d6e3e3;
+               font-size: 16px;
+               color: black;
+               border: 1px solid #239698;
+               padding: 10px;
+               border-radius: 50%;
+            }
+        }
+        .kitchen-content{
+                display: flex;
+                justify-content: space-around;
+        .kcontent-left{
+            
+            i{
+                font-size: 12px;
+                color: #ffb803;
+            }
+            h3{
+                font-size: 16px;
+            
+            }
+            span{
+                color: #239698;
+                font-weight: 700;
+                font-size: 15px;
+            }
+            #deleted{
+               color: black;
+               text-decoration: line-through;
+               font-weight: 400;
+            }
+        }
+        .kcontent-right{
+            
+            display: flex;
+            align-items: flex-end;
+            padding-left: 3px;
+            button{
+                padding: 5px 10px;
+                color: white;
+                background-color: #239698;
+                border: none;
+                border-radius: 5px;
+                font-size: 20px;
+            }
+        }
+      }
+      &:hover{
+        .kitchen-content h3{
+            color: #239698;
+        }
+        img{
+            transform: scale(1.1);
+            transition: 0.6s;
+        }
+        .kitchen-icons{
+            display: block !important;
+            top: 35%;
+            left: 17%;
+            z-index: 100;
+            }
+            @keyframes moveUp {
+                0% {
+                  transform: translateY(20px);
+                 
+                }
+                100% {
+                  transform: translateY(0);
+                }
+              }
+    }
+    }
+}
+//---------------------end------------------------------
