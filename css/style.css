@@ -244,4 +244,109 @@ header .header-top .support .support-text h4 {
   100% {
     transform: translateY(0);
   }
+}
+
+#Fruit .fruit-title {
+  display: flex;
+  align-items: center;
+}
+#Fruit .fruit-title .fruit-left h2 {
+  margin: 30px 0px;
+  font-size: 27px;
+  font-weight: 700;
+}
+#Fruit .fruit-title .fruit-right {
+  display: flex;
+  justify-content: flex-end;
+}
+#Fruit .fruit-title .fruit-right i {
+  box-shadow: 0px 0px 3px rgb(97, 94, 94);
+  border: none;
+  font-size: 25px;
+  padding: 7px;
+  margin-right: 20px;
+  border-radius: 10px;
+  color: #239698;
+}
+#Fruit .fruit-cards {
+  margin-right: 15px;
+  border: 1px solid rgb(236, 233, 233);
+  border-radius: 10px;
+  padding: 0px 10px 10px 10px;
+  position: relative;
+}
+#Fruit .fruit-cards img {
+  width: 100%;
+  height: 175px;
+  padding: 40px 30px 20px 30px;
+}
+#Fruit .fruit-cards .fruit-icons {
+  left: 20%;
+  display: none !important;
+  position: absolute;
+  animation: moveUp 0.4s ease-in-out;
+}
+#Fruit .fruit-cards .fruit-icons i {
+  margin-right: 5px;
+  background-color: #d6e3e3;
+  font-size: 16px;
+  color: black;
+  border: 1px solid #239698;
+  padding: 10px;
+  border-radius: 50%;
+}
+#Fruit .fruit-cards .fruit-content {
+  display: flex;
+  justify-content: space-around;
+}
+#Fruit .fruit-cards .fruit-content .fcontent-left i {
+  font-size: 12px;
+  color: #ffb803;
+}
+#Fruit .fruit-cards .fruit-content .fcontent-left h3 {
+  font-size: 16px;
+}
+#Fruit .fruit-cards .fruit-content .fcontent-left span {
+  color: #239698;
+  font-weight: 700;
+  font-size: 15px;
+}
+#Fruit .fruit-cards .fruit-content .fcontent-left #deleted {
+  color: black;
+  text-decoration: line-through;
+  font-weight: 400;
+}
+#Fruit .fruit-cards .fruit-content .fcontent-right {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 3px;
+}
+#Fruit .fruit-cards .fruit-content .fcontent-right button {
+  padding: 5px 10px;
+  color: white;
+  background-color: #239698;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+#Fruit .fruit-cards:hover .fruit-content h3 {
+  color: #239698;
+}
+#Fruit .fruit-cards:hover img {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+#Fruit .fruit-cards:hover .fruit-icons {
+  display: block !important;
+  top: 35%;
+  left: 17%;
+  z-index: 100;
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=style.css.map */

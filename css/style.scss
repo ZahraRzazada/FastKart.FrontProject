@@ -584,3 +584,122 @@ header{
     }
 }
 //-----------------------End---------------------------
+//------------------fruit------------------------------
+#Fruit{
+    .fruit-title{
+        display: flex;
+        align-items: center;
+        .fruit-left{
+            h2{
+                margin: 30px 0px;
+                font-size: 27px;
+                font-weight: 700;
+            }
+        }
+        .fruit-right{
+            display: flex;
+            justify-content:flex-end;
+            
+            i{
+                box-shadow: 0px 0px 3px rgb(97, 94, 94);;
+                border: none;
+                font-size: 25px;
+                padding: 7px;
+                margin-right: 20px;
+                border-radius: 10px;
+                color: #239698;
+            }
+        }
+    }
+    .fruit-cards{
+            margin-right: 15px;
+            border: 1px solid rgb(236, 233, 233);
+            border-radius: 10px;
+            padding: 0px 10px 10px 10px;
+            position: relative;
+        img{
+            width: 100%;
+            height: 175px;
+            padding: 40px 30px 20px 30px;
+        }
+        .fruit-icons{
+            left: 20%;
+            display: none !important;
+            position: absolute;
+            animation: moveUp 0.4s ease-in-out;
+            i{
+               margin-right: 5px;
+               background-color: #d6e3e3;
+               font-size: 16px;
+               color: black;
+               border: 1px solid #239698;
+               padding: 10px;
+               border-radius: 50%;
+            }
+        }
+      .fruit-content{
+                display: flex;
+                justify-content: space-around;
+        .fcontent-left{
+            
+            i{
+                font-size: 12px;
+                color: #ffb803;
+            }
+            h3{
+                font-size: 16px;
+            
+            }
+            span{
+                color: #239698;
+                font-weight: 700;
+                font-size: 15px;
+            }
+            #deleted{
+               color: black;
+               text-decoration: line-through;
+               font-weight: 400;
+            }
+        }
+        .fcontent-right{
+            
+            display: flex;
+            align-items: flex-end;
+            padding-left: 3px;
+            button{
+                padding: 5px 10px;
+                color: white;
+                background-color: #239698;
+                border: none;
+                border-radius: 5px;
+                font-size: 20px;
+            }
+        }
+      }
+      &:hover{
+        .fruit-content h3{
+            color: #239698;
+        }
+        img{
+            transform: scale(1.1);
+            transition: 0.6s;
+        }
+        .fruit-icons{
+            display: block !important;
+            top: 35%;
+            left: 17%;
+            z-index: 100;
+            }
+            @keyframes moveUp {
+                0% {
+                  transform: translateY(20px);
+                 
+                }
+                100% {
+                  transform: translateY(0);
+                }
+              }
+    }
+    }
+}
+//-------------------end--------------------------------
