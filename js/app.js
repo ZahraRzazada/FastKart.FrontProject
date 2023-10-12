@@ -373,7 +373,7 @@ $('.slider1').slick({
     arrow:false,
     autoplay:true,
     speed: 300,
-    slidesToShow: 3 ,
+    slidesToShow: 2 ,
     slidesToScroll: 1,
     responsive: [
       {
