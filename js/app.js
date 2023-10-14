@@ -1,32 +1,3 @@
-// document.querySelector("#hover-product").onmouseover=function(){
-//     document.querySelector(".product-drop2").style.display="block"
-// }
-// document.querySelector("#hover-product").onmouseleave=function(){
-//     document.querySelector(".product-drop2").style.display="none"
-// }
-// document.querySelector(".product-drop2").onmouseleave=function(){
-//     document.querySelector(".product-drop2").style.display="none"
-// }
-// //----------------------------
-// document.querySelector("#hover-page1").onmouseover=function(){
-//     document.querySelector(".pages-drop2").style.display="block"
-// }
-// document.querySelector(".pages-drop2").onmouseleave=function(){
-//     document.querySelector(".pages-drop2").style.display="none"
-// }
-// document.querySelector("#hover-page1").onmouseleave=function(){
-//     document.querySelector(".pages-drop2").style.display="none"
-// }
-// //-----------------------------
-// document.querySelector("#hover-page2").onmouseover=function(){
-//     document.querySelector(".pages-drop3").style.display="block"
-// }
-// document.querySelector(".pages-drop3").onmouseleave=function(){
-//     document.querySelector(".pages-drop3").style.display="none"
-// }
-// document.querySelector("#hover-page2").onmouseleave=function(){
-//     document.querySelector(".pages-drop3").style.display="none"
-// }
 $('.slider1').slick({
     dots: false,
     infinite: true,
@@ -64,7 +35,7 @@ $('.slider1').slick({
   $('.slider2').slick({
     dots: false,
     infinite: true,
-    arrow:false,
+    arrow:true,
     autoplay:true,
     speed: 300,
     slidesToShow: 6,
@@ -98,7 +69,7 @@ $('.slider1').slick({
   $('.slider3').slick({
     dots: false,
     infinite: true,
-    arrow:false,
+    arrow:true,
     autoplay:true,
     speed: 300,
     slidesToShow: 5 ,
@@ -166,10 +137,10 @@ $('.slider1').slick({
   $('.slider4').slick({
     dots: false,
     infinite: true,
-    arrow:false,
+    arrow:true,
     autoplay:true,
     speed: 300,
-    slidesToShow: 2 ,
+    slidesToShow: 2,
     slidesToScroll: 1,
     responsive: [
       {
@@ -191,7 +162,7 @@ $('.slider1').slick({
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1
         }
       }
@@ -200,7 +171,7 @@ $('.slider1').slick({
   $('.slider6').slick({
     dots: false,
     infinite: true,
-    arrow:false,
+    arrow:true,
     autoplay:true,
     speed: 300,
     slidesToShow: 5 ,
@@ -234,7 +205,7 @@ $('.slider1').slick({
   $('.slider7').slick({
     dots: false,
     infinite: true,
-    arrow:false,
+    arrow:true,
     autoplay:true,
     speed: 300,
     slidesToShow: 5 ,
@@ -268,7 +239,7 @@ $('.slider1').slick({
   $('.slider8').slick({
     dots: false,
     infinite: true,
-    arrow:false,
+    arrow:true,
     autoplay:true,
     speed: 300,
     slidesToShow: 5 ,
@@ -293,7 +264,7 @@ $('.slider1').slick({
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1
         }
       }
@@ -302,7 +273,7 @@ $('.slider1').slick({
   $('.slider9').slick({
     dots: false,
     infinite: true,
-    arrow:false,
+    arrow:true,
     autoplay:true,
     speed: 300,
     slidesToShow: 5 ,
@@ -496,3 +467,25 @@ $('.slider1').slick({
       }
     ]
   });
+
+//--------------------------Tabmenu-------------------------------
+  let tabbuttons=document.querySelectorAll('#Product-detail .product-bottom .tabmenu .links button')
+  console.log(tabbuttons);
+  for(let tbtn of tabbuttons){
+tbtn.onclick=function(){
+let x=document.querySelector('.tabactive')
+x.classList.remove('tabactive')
+tbtn.classList.add('tabactive')
+let data_id=this.getAttribute('data-id')
+let items=document.querySelectorAll('#Product-detail .product-bottom .tabmenu .contents div')
+for( let div of items){
+if(div.getAttribute('id')===data_id){
+  div.classList.remove('d-none')
+}
+else{
+  div.classList.add('d-none')
+}
+}
+}
+}
+//----------------------------------------------------------------
