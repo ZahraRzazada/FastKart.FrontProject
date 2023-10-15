@@ -6,11 +6,48 @@
     text-decoration: none;
 }
 }
+    #Setting{
+        background-color: #0e947a;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 5px;
+        position: fixed;
+        bottom:20px;
+        right: 20px;
+    }
+    #Up{
+        background-color: #0e947a;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 5px;
+        position: fixed;
+        bottom:50px;
+        right: 20px;
+        opacity: 0;
+        transition: 0.7s;
+    }
+
+.catagory-active{
+            text-align: start;
+            width: 90%;
+            color: #fff;
+            background:#0e947a;
+            font-size: 18px;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            border-radius: 6px;
+            padding: 15px 0px 15px 15px;
+}
 //----------------------------------------------------
+
 header{
     .ht-all{
         background-color: #239698;
-    }  
+    
     .header-top{
         position: sticky;
         top: 0;
@@ -513,7 +550,7 @@ header{
     }
     }
 
-
+    }
 }
 //----------------------------------------------------------
 #Premium{
@@ -2722,7 +2759,6 @@ header{
         .profile-box{
             // position: relative;
             background: #f8f8f8;
-    -webkit-box-shadow: 0 0 8px rgba(34,34,34,0.14);
     box-shadow: 0 0 8px rgba(34,34,34,0.14);
     border-radius: 10px;
     overflow: hidden;
@@ -2776,33 +2812,11 @@ header{
             }
         }
         .profil-bottom{
-            .btn1{
                 margin-bottom: 10px;
-                button{
-                    margin-top: 20px;
+                .btn2{
+                    button{
                     text-align: start;
-                    width: 90%;
-                    color:#0e947a;
-                    background:#97a7a372;
-                    font-size: 15px;
-                    font-weight: 600;
-                    position: relative;
-                    overflow: hidden;
-                    border: none;
-                    border-radius: 6px;
-                    padding: 5px 0px 5px 15px;
-                    i{
-                        font-size: 15px;
-                        margin-right: 5px;
-                    }
-                }
-
-            }
-            .btn2{
-                margin-bottom: 10px;
-                button{
-                    text-align: start;
-                    width: 90%;
+                    width: 100%;
                     color: black;
                     background-color: #f7f6f3;
                     font-size: 15px;
@@ -2811,14 +2825,29 @@ header{
                     overflow: hidden;
                     border: none;
                     border-radius: 6px;
-                    padding: 5px 0px 5px 15px;
+                    padding: 10px 0px 10px 15px;
                     i{
                         font-size: 15px;
                         margin-right: 5px;
                     }
+                    .dashboard-active{
+                        text-align: start;
+                        width: 90%;
+                        color: #fff;
+                        background:#0e947a !important;
+                        font-size: 18px;
+                        font-weight: 600;
+                        position: relative;
+                        overflow: hidden;
+                        border: none;
+                        border-radius: 6px;
+                        padding: 15px 0px 15px 15px;
+                    }
+                    }
                 }
 
-            }
+            
+            
         }
     }
 }
@@ -3705,6 +3734,7 @@ header{
 }
 //----------------------------------------------------------
 #Catagorymain{
+
 .catagorymain{
     display: flex;
     margin-top: 30px;
@@ -3713,33 +3743,6 @@ header{
             position: sticky;
            top: 0;
             border-right: 1px solid rgb(218, 214, 214);
-            .btn1{
-                margin-bottom: 10px;
-                button{
-                    text-align: start;
-                    width: 90%;
-                    color: #fff;
-                    background:#0e947a;
-                    font-size: 18px;
-                    font-weight: 600;
-                    position: relative;
-                    overflow: hidden;
-                    border: none;
-                    border-radius: 6px;
-                    padding: 15px 0px 15px 15px;
-                    img{
-                        transition: all 0.3s ease-in-out;
-                        top: -10px;
-                        position: absolute;
-                        width: 90px;
-                        height: 75px;
-                        right: -20px;
-                        filter: invert(1);
-                        opacity: 0.4;
-                    }
-                }
-
-            }
             .btn2{
                 margin-bottom: 10px;
                 button{
@@ -3773,6 +3776,7 @@ header{
                 }
 
             }
+
         }
     }
     .col-lg-9{       
@@ -6814,4 +6818,7 @@ header{
 }
 
 }
+}
+body{
+    background-color: red;
 }

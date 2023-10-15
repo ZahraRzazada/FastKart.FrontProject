@@ -489,3 +489,43 @@ else{
 }
 }
 //----------------------------------------------------------------
+//-------------------------catagory------------------------------
+let cbtn=document.querySelectorAll('#Catagorymain .catagorymain .catagory-left .btn2 button')
+for (let i = 0; i < cbtn.length; i++) {
+  cbtn[i].onclick=(e)=>{
+    if(!cbtn[i].classList.contains('catagory-active')){
+      e.target.classList.add('catagory-active')
+    }
+    else{
+      e.target.classList.remove('catagory-active')
+    }
+  }
+}
+//-----------------------------------------------------------------
+//-------------------------dashboard------------------------------
+let dbtn=document.querySelectorAll('#Catagorymain .catagorymain .catagory-left .btn2 button')
+for (let i = 0; i < dbtn.length; i++) {
+  dbtn[i].onclick=(e)=>{
+    if(!dbtn[i].classList.contains('dasboard-active')){
+      e.target.classList.add('dashboard-active')
+    }
+    else{
+      e.target.classList.remove('dashboard-active')
+    }
+  }
+}
+
+//-----------------------scrol icon-------------------------------
+let header=document.querySelector('header')
+window.onscroll=function(){
+  if(document.documentElement.scrollTop>150){
+// header.classList.add('active-header')
+$('Up').css('opacity','1')
+  }
+  else{
+    // header.classList.remove('active-header')
+    $('Up').css('opacity','0')
+  }
+}
+//-----------------------------------------------------------------
+
