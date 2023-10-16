@@ -6,42 +6,6 @@
     text-decoration: none;
 }
 }
-    #Setting{
-        background-color: #0e947a;
-        color: white;
-        cursor: pointer;
-        padding: 10px;
-        border-radius: 5px;
-        position: fixed;
-        bottom:20px;
-        right: 20px;
-    }
-    #Up{
-        background-color: #0e947a;
-        color: white;
-        cursor: pointer;
-        padding: 10px;
-        border-radius: 5px;
-        position: fixed;
-        bottom:50px;
-        right: 20px;
-        opacity: 0;
-        transition: 0.7s;
-    }
-
-.catagory-active{
-            text-align: start;
-            width: 90%;
-            color: #fff;
-            background:#0e947a;
-            font-size: 18px;
-            font-weight: 600;
-            position: relative;
-            overflow: hidden;
-            border: none;
-            border-radius: 6px;
-            padding: 15px 0px 15px 15px;
-}
 //----------------------------------------------------
 
 header{
@@ -49,8 +13,7 @@ header{
         background-color: #239698;
     
     .header-top{
-        position: sticky;
-        top: 0;
+
         display: flex;
         align-items: center;
         .logo {
@@ -2123,87 +2086,8 @@ header{
     }
 }
 //----------------------------------------------------------
-#Footertop{
-    margin: 50px 0px;
-    .container{
-        display: flex;
-        justify-content: space-between;
-    }
-    .footertop{
-        background-color: rgba(191,191,191,0.2);
-        display: flex;
-        padding: 15px 5px;
-        border-radius: 10px;
-        transition: 0.7s;
-        cursor: pointer;
-        h3{
-            font-size: 17px;
-            font-weight: 600;
-        }
-        h6{
-            font-size: 17px;
-            color: #4a5568;
-        }
-        i{
-          margin: 30px 12px;
-          color: #239698;
-        }
-        &:hover{
-            background-color: #239698;
-            i,h6,h3{
-                color: white;
-            }
-        }
-    }
-}
 //----------------------------------------------------------
-footer{
-    padding: 40px 0px;
-    background-color: black;
-    .container{
-        display: flex;
-    }
-    .f1{
-        a{
-            color: white;
-            font-size: 40px;
-        }
-        p{
-            color:#bfbfbf;
-            font-size: 15px;
-        }
-        i{
-           color: white;
-            background-color: #282829;
-            font-size: 25px;
-            border-radius: 50%;
-            border: none;
-            padding: 10px 10px;
-            transition: 0.6s;
-            &:hover{
-               background-color: rgb(124, 124, 124);
-            }
-        }
-    }
-    h4{
-        color: white;
-       margin: 10px 10px;
-    }
-    ul a{
-        color:#bfbfbf;
-    }
-    ul li{
-    list-style: none;
-    margin-bottom: 10px;
-    color:#bfbfbf;
-    font-size: 15px;
-    margin-bottom: 10px;
-    i{
-        margin-right: 10px;
-    }
-    }
-    
-}
+
 // -----------------------Home-end--------------------------
 
 
@@ -2813,7 +2697,7 @@ header{
         }
         .profil-bottom{
                 margin-bottom: 10px;
-                .btn2{
+                .btn3{
                     button{
                     text-align: start;
                     width: 100%;
@@ -2829,19 +2713,6 @@ header{
                     i{
                         font-size: 15px;
                         margin-right: 5px;
-                    }
-                    .dashboard-active{
-                        text-align: start;
-                        width: 90%;
-                        color: #fff;
-                        background:#0e947a !important;
-                        font-size: 18px;
-                        font-weight: 600;
-                        position: relative;
-                        overflow: hidden;
-                        border: none;
-                        border-radius: 6px;
-                        padding: 15px 0px 15px 15px;
                     }
                     }
                 }
@@ -3060,132 +2931,7 @@ h6{
 }
 }
 //----------------------------------------------------------
-#Footertopp{
-    background-color: rgba(191,191,191,0.2);
-    .footertopp{
-        margin-top: 30px;
-        padding: 40px 0px 10px;
-        display: flex;
-        justify-content: space-between;
-        .ffirst{
-            display: flex;
-            align-items: center;
-            h5{
-                font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
-                line-height: 1.2;
-                i{
-                    font-size: 20px;
-                    color:#373738;
-                    margin-right: 10px;
-                }
-            }
-        }
-        .fsecond{
-            display: flex;
-            align-items: center;
-            h5{
-                font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
-                line-height: 1.2;
-                i{
-                    font-size: 20px;
-                    color:#373738;
-                    margin-right: 10px;
-                }
-            }
-           
-        }
-        .fthird{
-            display: flex;
-            align-items: center;
-            h5{
-                font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
-                line-height: 1.2;
-                i{
-                    font-size: 20px;
-                    color:#373738;
-                    margin-right: 10px;
-                }
-            }
-           
-        }
-        .ffourth{
-            display: flex;
-            align-items: center;
-            h5{
-                font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
-                line-height: 1.2;
-                i{
-                    font-size: 20px;
-                    color:#373738;
-                    margin-right: 10px;
-                }
-            }
-           
-        }
-    }
-}
-//----------------------------------------------------------
-#footerabout{
 
-    padding: 40px 0px;
-    background-color: rgba(191,191,191,0.2);
-    .container{
-        display: flex;
-        border-top: 1px dashed rgb(190, 186, 186);
-        border-bottom: 1px dashed rgb(190, 186, 186);
-    }
-    .f1{
-        a{
-            color: black;
-            font-size: 40px;
-        }
-        p{
-            color: black;
-            font-size: 15px;
-        }
-        i{
-           color: black;
-            background-color: white;
-            font-size: 25px;
-            border-radius: 50%;
-            border: none;
-            padding: 10px 10px;
-            transition: 0.6s;
-            
-            &:hover{
-               background-color: rgb(124, 124, 124);
-            }
-        }
-    }
-    h4{
-        color: black;
-       margin: 10px 10px;
-    }
-    ul a{
-        color:black;
-    }
-    ul li{
-    list-style: none;
-    margin-bottom: 10px;
-    color:black;
-    font-size: 15px;
-    margin-bottom: 10px;
-    i{
-        margin-right: 10px;
-    }
-    }
-    // &::before{
-    //     content: "";
-    //     position: absolute;
-    //     width: 30%;
-    //     height: 100%;
-    //     bottom: 0;
-    //     right: 0;
-    //     background-image:url(/photos/footer.png);
-    //     background-repeat: no-repeat;
-    //     z-index: 100;
-    // }
-}
 //---------------------------Dashboard end------------------
 
 
@@ -3928,121 +3674,7 @@ header{
 }
 }
 //----------------------------------------------------------
-#Footertopcatagory{
-    background-color: rgba(191,191,191,0.2);
-    .footertopp{
-        margin-top: 30px;
-        padding: 40px 0px 10px;
-        display: flex;
-        justify-content: space-between;
-        .ffirst{
-            display: flex;
-            align-items: center;
-            h5{
-                font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
-                line-height: 1.2;
-                i{
-                    font-size: 20px;
-                    color:#373738;
-                    margin-right: 10px;
-                }
-            }
-        }
-        .fsecond{
-            display: flex;
-            align-items: center;
-            h5{
-                font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
-                line-height: 1.2;
-                i{
-                    font-size: 20px;
-                    color:#373738;
-                    margin-right: 10px;
-                }
-            }
-           
-        }
-        .fthird{
-            display: flex;
-            align-items: center;
-            h5{
-                font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
-                line-height: 1.2;
-                i{
-                    font-size: 20px;
-                    color:#373738;
-                    margin-right: 10px;
-                }
-            }
-           
-        }
-        .ffourth{
-            display: flex;
-            align-items: center;
-            h5{
-                font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
-                line-height: 1.2;
-                i{
-                    font-size: 20px;
-                    color:#373738;
-                    margin-right: 10px;
-                }
-            }
-           
-        }
-    }
-}
-//----------------------------------------------------------
-#Footercatagory{
 
-    padding: 40px 0px;
-    background-color: rgba(191,191,191,0.2);
-    .container{
-        display: flex;
-        border-top: 1px dashed rgb(190, 186, 186);
-        border-bottom: 1px dashed rgb(190, 186, 186);
-    }
-    .f1{
-        a{
-            color: black;
-            font-size: 40px;
-        }
-        p{
-            color: black;
-            font-size: 15px;
-        }
-        i{
-           color: black;
-            background-color: white;
-            font-size: 25px;
-            border-radius: 50%;
-            border: none;
-            padding: 10px 10px;
-            transition: 0.6s;
-            
-            &:hover{
-               background-color: rgb(124, 124, 124);
-            }
-        }
-    }
-    h4{
-        color: black;
-       margin: 10px 10px;
-    }
-    ul a{
-        color:black;
-    }
-    ul li{
-    list-style: none;
-    margin-bottom: 10px;
-    color:black;
-    font-size: 15px;
-    margin-bottom: 10px;
-    i{
-        margin-right: 10px;
-    }
-    }
-}
 //----------------------Catagory end-------------------------------------- 
 
 
@@ -6147,120 +5779,7 @@ header{
 
 
 }
-#Footertopcatagory{
-    background-color: rgba(191,191,191,0.2);
-    .footertopp{
-        margin-top: 30px;
-        padding: 40px 0px 10px;
-        display: flex;
-        justify-content: space-between;
-        .ffirst{
-            display: flex;
-            align-items: center;
-            h5{
-                font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
-                line-height: 1.2;
-                i{
-                    font-size: 20px;
-                    color:#373738;
-                    margin-right: 10px;
-                }
-            }
-        }
-        .fsecond{
-            display: flex;
-            align-items: center;
-            h5{
-                font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
-                line-height: 1.2;
-                i{
-                    font-size: 20px;
-                    color:#373738;
-                    margin-right: 10px;
-                }
-            }
-           
-        }
-        .fthird{
-            display: flex;
-            align-items: center;
-            h5{
-                font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
-                line-height: 1.2;
-                i{
-                    font-size: 20px;
-                    color:#373738;
-                    margin-right: 10px;
-                }
-            }
-           
-        }
-        .ffourth{
-            display: flex;
-            align-items: center;
-            h5{
-                font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
-                line-height: 1.2;
-                i{
-                    font-size: 20px;
-                    color:#373738;
-                    margin-right: 10px;
-                }
-            }
-           
-        }
-    }
-}
-#Footercatagory{
 
-    padding: 40px 0px;
-    background-color: rgba(191,191,191,0.2);
-    .container{
-        display: flex;
-        border-top: 1px dashed rgb(190, 186, 186);
-        border-bottom: 1px dashed rgb(190, 186, 186);
-    }
-    .f1{
-        a{
-            color: black;
-            font-size: 40px;
-        }
-        p{
-            color: black;
-            font-size: 15px;
-        }
-        i{
-           color: black;
-            background-color: white;
-            font-size: 25px;
-            border-radius: 50%;
-            border: none;
-            padding: 10px 10px;
-            transition: 0.6s;
-            
-            &:hover{
-               background-color: rgb(124, 124, 124);
-            }
-        }
-    }
-    h4{
-        color: black;
-       margin: 10px 10px;
-    }
-    ul a{
-        color:black;
-    }
-    ul li{
-    list-style: none;
-    margin-bottom: 10px;
-    color:black;
-    font-size: 15px;
-    margin-bottom: 10px;
-    i{
-        margin-right: 10px;
-    }
-    }
-}
  //-----------------------Cart End--------------------------------------- 
 
 
@@ -6277,6 +5796,9 @@ header{
         .ht-all{
             .header-top{
                 .search{
+                    display: none;
+                }
+                .location{
                     display: none;
                 }
                 .support{
@@ -6819,6 +6341,4 @@ header{
 
 }
 }
-body{
-    background-color: red;
-}
+
